@@ -187,6 +187,7 @@ git remote rename origin upstream
 ---
 # 📦 Descargar APK
 
+https://github.com/isairey/AppAndroidStreamingMusica/releases/tag/V1
 
 ---
 
