@@ -206,7 +206,7 @@ Monochrome-debug.apk
 ## 🚀 Actualizar Monochrome
 
 ```bash
-cd monochrome
+cd AppAndroidStreamingMusica
 ```
 
 ```bash
