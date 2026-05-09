@@ -185,40 +185,8 @@ git remote rename origin upstream
 ```
 
 ---
+# 📦 Descargar APK
 
-## 3️⃣ Clonar overlay Android
-
-```bash
-git clone https://github.com/fabiodalez-dev/Monochrome-Android-APK
-```
-
----
-
-## 4️⃣ Instalar overlay
-
-```bash
-cd Monochrome-Android-APK
-```
-
-```bash
-chmod +x install.sh
-```
-
-```bash
-./install.sh ../monochrome
-```
-
----
-
-## 5️⃣ Compilar APK
-
-```bash
-cd ../monochrome
-```
-
-```bash
-./build-android.sh
-```
 
 ---
 
