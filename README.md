@@ -52,15 +52,6 @@ El proyecto está orientado al aprendizaje y práctica de:
 - Servicios foreground
 - Aplicaciones musicales
 
----
-
-# 📸 Preview
-
-<div align="center">
-
-<img width="700" src="https://raw.githubusercontent.com/monochrome-music/monochrome/main/public/icon-512.png"/>
-
-</div>
 
 ---
 
@@ -182,11 +173,11 @@ brew install --cask android-commandlinetools
 ## 2️⃣ Clonar Monochrome
 
 ```bash
-git clone https://github.com/monochrome-music/monochrome.git
+git clone https://github.com/isairey/AppAndroidStreamingMusica.git
 ```
 
 ```bash
-cd monochrome
+cd AppAndroidStreamingMusica
 ```
 
 ```bash
