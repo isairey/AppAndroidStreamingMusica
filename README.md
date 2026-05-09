@@ -1,101 +1,457 @@
-# Fabiodalez Music — Android App
+<div align="center">
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/fabiodalez)
+<img width="180" src="https://raw.githubusercontent.com/monochrome-music/monochrome/main/public/icon-512.png" />
 
-Android wrapper for [Monochrome](https://github.com/monochrome-music/monochrome), a privacy-respecting music streaming application.
+# 🎵 Fabiodalez Music
 
-## Features
+### Android Music Streaming App basada en Monochrome 🚀
 
-- **Background playback** — Foreground Service keeps audio playing when the screen is off
-- **Media controls** — Play/pause/skip in the notification shade, lock screen, and Bluetooth
-- **Battery optimization bypass** — Requests exclusion from Android's battery killer on first launch
-- **Downloads** — Saves tracks to `Downloads/FabiodalezMusic/` with Android notification
-- **Local files** — Select Music Folder works on Android (native folder picker)
-- **OAuth** — Last.fm/Libre.fm authentication via Chrome Custom Tab
-- **Clipboard** — Copy to clipboard works natively
-- **Bluetooth auto-pause** — Music pauses automatically when Bluetooth disconnects
-- **Full UI** — Navigation bar visible, status bar visible with safe area padding
-- **Back navigation** — Back button in header for album/artist/playlist navigation
-- **Branding** — "Fabiodalez Music" name, custom splash screen
+<p align="center">
+  <b>Fabiodalez Music</b> es una aplicación Android diseñada como wrapper nativo para Monochrome, enfocada en ofrecer una experiencia moderna de streaming musical con privacidad, reproducción en segundo plano y funcionalidades multimedia avanzadas.
+</p>
 
-## Requirements
+<p align="center">
+  <img src="https://img.shields.io/badge/Android-Mobile%20App-3DDC84?style=for-the-badge&logo=android">
+  <img src="https://img.shields.io/badge/Java-Native%20Bridge-orange?style=for-the-badge&logo=openjdk">
+  <img src="https://img.shields.io/badge/Capacitor-Hybrid%20App-119EFF?style=for-the-badge&logo=capacitor">
+  <img src="https://img.shields.io/badge/Open%20Source-Music-success?style=for-the-badge">
+</p>
 
-- macOS (with Homebrew)
-- JDK 21 (`brew install openjdk@21`)
-- Android command-line tools (`brew install --cask android-commandlinetools`)
+<p align="center">
+  <a href="#-preview">Preview</a> •
+  <a href="#-características">Características</a> •
+  <a href="#-arquitectura">Arquitectura</a> •
+  <a href="#-instalación">Instalación</a> •
+  <a href="#-roadmap">Roadmap</a>
+</p>
 
-## Quick Start
+</div>
+
+---
+
+# 🌌 Acerca del Proyecto
+
+**Fabiodalez Music** es una aplicación Android híbrida construida sobre el proyecto open source Monochrome.
+
+La aplicación combina:
+
+- 🎵 Streaming musical
+- 📱 Funcionalidades Android nativas
+- 🔒 Privacidad del usuario
+- ⚡ Reproducción avanzada
+- 🎧 Integración multimedia
+- 🚀 Experiencia moderna
+
+El proyecto está orientado al aprendizaje y práctica de:
+
+- Android Development
+- Capacitor
+- Java nativo
+- Bridges híbridos
+- Multimedia APIs
+- Servicios foreground
+- Aplicaciones musicales
+
+---
+
+# 📸 Preview
+
+<div align="center">
+
+<img width="700" src="https://raw.githubusercontent.com/monochrome-music/monochrome/main/public/icon-512.png"/>
+
+</div>
+
+---
+
+# ✨ Características
+
+## 🎵 Reproducción Multimedia
+
+- ▶️ Reproducción en segundo plano
+- 🎧 Controles multimedia nativos
+- 🔊 Compatibilidad Bluetooth
+- ⏸️ Auto pausa por desconexión Bluetooth
+- 📲 Integración con pantalla de bloqueo
+
+---
+
+## 📥 Gestión de Descargas
+
+- 💾 Descarga de canciones
+- 📂 Guardado automático en:
 
 ```bash
-# 1. Clone Monochrome
+Downloads/FabiodalezMusic/
+```
+
+- 🔔 Notificaciones Android nativas
+- ⚡ Manejo optimizado de archivos
+
+---
+
+## 📱 Funciones Android Nativas
+
+- 📂 Selector de carpetas musicales
+- 📋 Integración con portapapeles
+- 🌐 OAuth mediante Chrome Custom Tabs
+- 🔋 Bypass de optimización de batería
+- 🔥 Servicios foreground
+
+---
+
+## 🎨 Interfaz y UX
+
+- ✨ Branding personalizado
+- 🌙 Safe area support
+- 📲 Barra de navegación visible
+- 🔙 Navegación optimizada
+- 🚀 Experiencia fluida
+
+---
+
+# 🛠️ Tecnologías Utilizadas
+
+## 📱 Mobile Development
+
+<p>
+  <img src="https://skillicons.dev/icons?i=androidstudio,java,javascript,typescript" />
+</p>
+
+- Android
+- Java
+- JavaScript
+- TypeScript
+
+---
+
+## ⚙️ Frameworks y Herramientas
+
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,git,github,vscode" />
+</p>
+
+- Capacitor
+- Monochrome
+- Node.js
+- Git & GitHub
+
+---
+
+# 📂 Estructura del Proyecto
+
+```bash
+Fabiodalez-Music/
+│
+├── android/                  # Código nativo Android
+├── android-service.js        # Bridge JavaScript
+├── capacitor.config.ts       # Configuración Capacitor
+├── build-android.sh          # Script de compilación
+├── install.sh                # Instalador overlay
+├── patches/                  # Parches temporales
+└── README.md
+```
+
+---
+
+# ⚡ Instalación
+
+# 🛠️ Requisitos
+
+## Software necesario
+
+- macOS
+- Homebrew
+- JDK 21
+- Android SDK Tools
+
+---
+
+## 1️⃣ Instalar dependencias
+
+```bash
+brew install openjdk@21
+```
+
+```bash
+brew install --cask android-commandlinetools
+```
+
+---
+
+## 2️⃣ Clonar Monochrome
+
+```bash
 git clone https://github.com/monochrome-music/monochrome.git
-cd monochrome
-git remote rename origin upstream
-
-# 2. Clone this overlay
-cd ..
-git clone https://github.com/fabiodalez-dev/Monochrome-Android-APK
-
-# 3. Install overlay into Monochrome
-cd Monochrome-Android-APK
-chmod +x install.sh
-./install.sh ../monochrome
-
-# 4. Build APK
-cd ../monochrome
-./build-android.sh
 ```
-
-The APK will be at `Monochrome-debug.apk`.
-
-## Updating
-
-When Monochrome releases updates:
 
 ```bash
 cd monochrome
+```
+
+```bash
+git remote rename origin upstream
+```
+
+---
+
+## 3️⃣ Clonar overlay Android
+
+```bash
+git clone https://github.com/fabiodalez-dev/Monochrome-Android-APK
+```
+
+---
+
+## 4️⃣ Instalar overlay
+
+```bash
+cd Monochrome-Android-APK
+```
+
+```bash
+chmod +x install.sh
+```
+
+```bash
+./install.sh ../monochrome
+```
+
+---
+
+## 5️⃣ Compilar APK
+
+```bash
+cd ../monochrome
+```
+
+```bash
 ./build-android.sh
 ```
 
-The script automatically pulls the latest from upstream, applies patches, builds, and restores all files. **No manual work needed.**
+---
 
-## How It Works
+# 📦 APK Generado
 
-The build script temporarily patches these upstream files during build:
-- `index.html` — adds viewport-fit, script tag, brand name
-- `package.json` — adds Capacitor dependencies
+El APK final estará disponible en:
 
-All patches are **reverted after build**. The upstream repo stays clean.
-
-The Android-specific code lives entirely in:
-- `android/` — Native Java code (foreground service, download bridge, etc.)
-- `android/android-service.js` — JS bridge (media controls, downloads, CSS, back button)
-- `capacitor.config.ts` — Capacitor configuration
-- `build-android.sh` — Build automation
-
-## Architecture
-
+```bash
+Monochrome-debug.apk
 ```
-Monochrome (upstream web app)
+
+---
+
+# 🔄 Actualizaciones
+
+## 🚀 Actualizar Monochrome
+
+```bash
+cd monochrome
+```
+
+```bash
+./build-android.sh
+```
+
+El sistema automáticamente:
+
+- 🔥 Descarga cambios upstream
+- ⚡ Aplica parches
+- 📦 Genera APK
+- 🧹 Restaura archivos originales
+
+---
+
+# 🧠 Cómo Funciona
+
+## ⚡ Sistema de Parches
+
+Durante la compilación se modifican temporalmente:
+
+- `index.html`
+- `package.json`
+
+---
+
+## 🔥 Bridges Android
+
+La lógica Android vive completamente en:
+
+```bash
+android/
+android-service.js
+capacitor.config.ts
+build-android.sh
+```
+
+---
+
+# 🏗️ Arquitectura
+
+```bash
+Monochrome (Web App)
     │
-    ├── Capacitor WebView (wraps the web app)
+    ├── Capacitor WebView
     │
-    ├── android-service.js (injected at build time)
-    │   ├── Download handler (monkey-patches <a download>)
-    │   ├── Media controls (MutationObserver on document.title)
-    │   ├── CSS injection (safe areas, layout fixes)
-    │   ├── Back button (history.pushState hook)
-    │   ├── Clipboard override (AndroidBridge)
-    │   └── OAuth override (window.open → Chrome Custom Tab)
+    ├── android-service.js
+    │   ├── Media Controls
+    │   ├── Download Handler
+    │   ├── CSS Injection
+    │   ├── Back Navigation
+    │   ├── Clipboard Bridge
+    │   └── OAuth Bridge
     │
     └── Native Java
-        ├── AudioForegroundService (MediaSession + notification)
-        ├── AudioServicePlugin (Capacitor bridge)
-        ├── DownloadBridge (MediaStore file saving)
-        ├── LocalFilesBridge (Android folder picker)
-        └── AndroidBridge (clipboard, browser)
+        ├── AudioForegroundService
+        ├── AudioServicePlugin
+        ├── DownloadBridge
+        ├── LocalFilesBridge
+        └── AndroidBridge
 ```
 
-## License
+---
 
-Same as [Monochrome](https://github.com/monochrome-music/monochrome/blob/main/license).
+# 🔥 Funcionalidades Técnicas
+
+## 🎧 Media Controls
+
+- Notification controls
+- Lock screen controls
+- Bluetooth integration
+- MediaSession support
+
+---
+
+## 📥 Descargas
+
+- MediaStore integration
+- Native Android saving
+- Notification support
+- Download handling bridge
+
+---
+
+## 🌐 OAuth
+
+- Chrome Custom Tabs
+- Native browser integration
+- Secure authentication flow
+
+---
+
+# 🧠 Objetivos del Proyecto
+
+## 🎯 Aprender y practicar
+
+- Android híbrido
+- Capacitor
+- Bridges nativos
+- Multimedia APIs
+- Servicios Android
+- Audio playback
+- Integración WebView
+- Automatización de builds
+
+---
+
+# 📊 Roadmap
+
+## 🚧 Próximamente
+
+- 🎶 Equalizer avanzado
+- 🌙 Dark mode dinámico
+- ☁️ Sync multiplataforma
+- ❤️ Favoritos offline
+- 📱 Widgets Android
+- 🔥 Android Auto support
+- 🎧 Visualizador de audio
+- 🚀 Optimización de rendimiento
+
+---
+
+# 🤝 Contribuciones
+
+Las contribuciones son bienvenidas ❤️
+
+## Pasos para contribuir
+
+1. Haz Fork del proyecto
+2. Crea una rama
+
+```bash
+git checkout -b feature/nueva-funcion
+```
+
+3. Realiza tus cambios
+4. Haz commit
+
+```bash
+git commit -m "✨ Nueva funcionalidad"
+```
+
+5. Haz push
+
+```bash
+git push origin feature/nueva-funcion
+```
+
+6. Abre un Pull Request 🚀
+
+---
+
+# 🙌 Créditos
+
+- 🎵 Monochrome Music
+- ⚡ Capacitor Team
+- 🤖 Android Developers
+- 🚀 Comunidad Open Source
+
+---
+
+# 👨‍💻 Autor
+
+<div align="center">
+
+<img src="https://github.com/isairey.png" width="120" style="border-radius:50%" />
+
+## Android & Hybrid App Developer
+
+Apasionado por aplicaciones musicales, Android nativo y experiencias multimedia modernas.
+
+</div>
+
+---
+
+# 🌟 Apoya el Proyecto
+
+Si te gusta Fabiodalez Music:
+
+⭐ Dale una estrella al repositorio  
+🍴 Haz Fork del proyecto  
+📢 Compártelo con otros desarrolladores
+
+---
+
+# ☕ Buy Me a Coffee
+
+<p align="center">
+
+<a href="https://buymeacoffee.com/fabiodalez">
+  <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black">
+</a>
+
+</p>
+
+---
+
+# 📜 Licencia
+
+Este proyecto utiliza la misma licencia que Monochrome.
+
+---
+
+<div align="center">
+
+### 🎵 Fabiodalez Music — Android, privacidad y música en una experiencia moderna.
+
+</div>
