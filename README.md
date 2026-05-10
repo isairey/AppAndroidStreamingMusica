@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="180" src="https://raw.githubusercontent.com/isairey/AppAndroidStreamingMusica/main/public/icon-512.png" />
+
 
 # 🎵 IRP Music
 
