@@ -390,17 +390,6 @@ Si te gusta Fabiodalez Music:
 🍴 Haz Fork del proyecto  
 📢 Compártelo con otros desarrolladores
 
----
-
-# ☕ Buy Me a Coffee
-
-<p align="center">
-
-<a href="https://buymeacoffee.com/fabiodalez">
-  <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black">
-</a>
-
-</p>
 
 ---
 
