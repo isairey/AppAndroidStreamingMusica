@@ -2,7 +2,7 @@
 
 <img width="180" src="https://raw.githubusercontent.com/isairey/AppAndroidStreamingMusica/main/public/icon-512.png" />
 
-# 🎵 Fabiodalez Music
+# 🎵 IRP Music
 
 ### Android Music Streaming App basada en Monochrome 🚀
 
