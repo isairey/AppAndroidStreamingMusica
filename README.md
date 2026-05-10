@@ -73,7 +73,7 @@ El proyecto está orientado al aprendizaje y práctica de:
 - 📂 Guardado automático en:
 
 ```bash
-Downloads/FabiodalezMusic/
+Downloads/IRPMusic/
 ```
 
 - 🔔 Notificaciones Android nativas
@@ -132,7 +132,7 @@ Downloads/FabiodalezMusic/
 # 📂 Estructura del Proyecto
 
 ```bash
-Fabiodalez-Music/
+AppAndroidStreamingMusica/
 │
 ├── android/                  # Código nativo Android
 ├── android-service.js        # Bridge JavaScript
@@ -249,7 +249,7 @@ build-android.sh
 # 🏗️ Arquitectura
 
 ```bash
-Monochrome (Web App)
+AppAndroidStreamingMusica (Web App)
     │
     ├── Capacitor WebView
     │
@@ -401,6 +401,6 @@ Este proyecto utiliza la misma licencia que Monochrome.
 
 <div align="center">
 
-### 🎵 Fabiodalez Music — Android, privacidad y música en una experiencia moderna.
+### 🎵 IRP Music — Android, privacidad y música en una experiencia moderna.
 
 </div>
